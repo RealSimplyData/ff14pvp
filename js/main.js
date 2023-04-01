@@ -79,6 +79,7 @@ main.reset = function () {
 	if (this.resetCount >= 3) {
 		document.getElementById("rank").value = 0;
 		document.getElementById("exp").value = 0;
+		document.getElementById("targetRank").value = 25;
 		this.resetCount = 0;
 
 		document.getElementById("resetButton").innerHTML = "Reset (0/3)";

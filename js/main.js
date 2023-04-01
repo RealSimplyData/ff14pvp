@@ -54,10 +54,10 @@ main.addExp = function (exp) {
 	const [currentExp] = this.getExp();
 
 	const newExp = currentExp + exp;
-	const newRank = currentRank + Math.floor(newExp / data.ranks[currentRank + 1]);
+	const newRank = currentRank + Math.floor(newExp / data.ranks[currentRank]);
 
 	document.getElementById("rank").value = newRank;
-	document.getElementById("exp").value = newExp % data.ranks[currentRank + 1];
+	document.getElementById("exp").value = newExp % data.ranks[currentRank];
 
 	this.processUpdate();
 }

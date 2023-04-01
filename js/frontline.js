@@ -179,9 +179,9 @@ frontline.update = function () {
 			const secondPlaceMatches = Math.ceil((xpToTargetRank * otherMultiplier) / 1500 + (xpToTargetRank * targetMultiplier) / 1250 + (xpToTargetRank * otherMultiplier) / 1000);
 			const thirdPlaceMatches = Math.ceil((xpToTargetRank * otherMultiplier) / 1500 + (xpToTargetRank * otherMultiplier) / 1250 + (xpToTargetRank * targetMultiplier) / 1000);
 
-			const firstPlaceMatchTime = Math.ceil(firstPlaceMatches * 5);
-			const secondPlaceMatchTime = Math.ceil(secondPlaceMatches * 5);
-			const thirdPlaceMatchTime = Math.ceil(thirdPlaceMatches * 5);
+			const firstPlaceMatchTime = Math.ceil(firstPlaceMatches * 20);
+			const secondPlaceMatchTime = Math.ceil(secondPlaceMatches * 20);
+			const thirdPlaceMatchTime = Math.ceil(thirdPlaceMatches * 20);
 			const firstPlaceQueueTime = Math.ceil(firstPlaceMatches * 3);
 			const secondPlaceQueueTime = Math.ceil(secondPlaceMatches * 3);
 			const thirdPlaceQueueTime = Math.ceil(thirdPlaceMatches * 3);

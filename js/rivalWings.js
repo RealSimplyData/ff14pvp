@@ -67,7 +67,7 @@ rivalWings.update = function () {
 
 		const totalMatches = Math.ceil(victoryMatches + defeatMatches);
 
-		const matchTime = Math.ceil(totalMatches * 5);
+		const matchTime = Math.ceil(totalMatches * 15);
 		const queueTime = Math.ceil(totalMatches * 3);
 		const totalTime = matchTime + queueTime;
 

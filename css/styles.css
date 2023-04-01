@@ -148,6 +148,14 @@ button:hover {
   color: #c06c84;
 }
 
+.place.victory {
+  color: #f8b195;
+}
+
+.place.defeat {
+  color: #c06c84;
+}
+
 .series-exp {
   font-weight: 600;
   font-size: 0.85rem;

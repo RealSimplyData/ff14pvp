@@ -131,6 +131,11 @@ button:hover {
   font-size: 0.8rem;
 }
 
+.place:not(.dataset) {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
 .place.first {
   color: #f8b195;
 }

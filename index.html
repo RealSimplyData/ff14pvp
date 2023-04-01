@@ -58,11 +58,19 @@
         Show / Hide
       </button>
       <div id="view-crystallineConflict">
-        <p><b>Series EXP (Victory/Defeat):</b> 900 / 700</p>
+        <p>
+          <b>Series EXP (Victory/Defeat):</b>
+          <span class="series-exp">900</span> /
+          <span class="series-exp">700</span>
+        </p>
         <p><b>Match Time:</b> 5 minutes</p>
         <p><b>Queue Time:</b> 3 minutes</p>
-        <button onclick="main.addExp(900)">Add Victory (+900 EXP)</button>
-        <button onclick="main.addExp(700)">Add Defeat (+700 EXP)</button>
+        <button onclick="main.addExp(900)">
+          Add Victory (+<span class="series-exp">900</span>)
+        </button>
+        <button onclick="main.addExp(700)">
+          Add Defeat (+<span class="series-exp">700</span>)
+        </button>
         <p class="aria-label" aria-labelledby="tbl-crystalline-conflict">
           Crystalline Conflict Data Table
         </p>
@@ -96,7 +104,9 @@
               >2nd</span
             >/<span class="place third">3rd</span>):</b
           >
-          1500 / 1250 / 1000
+          <span class="place first series-exp">1500</span>
+          / <span class="place second series-exp">1250</span> /
+          <span class="place third series-exp">1000</span>
         </p>
         <p><b>Match Time:</b> 20 minutes</p>
         <p><b>Queue Time:</b> 7 minutes</p>
@@ -138,13 +148,13 @@
           </div>
         </div>
         <button onclick="frontline.add1stPlaceWin()">
-          Add 1st Place (+1500 EXP)
+          Add 1st Place (+<span class="series-exp">1500</span>)
         </button>
         <button onclick="frontline.add2ndPlaceWin()">
-          Add 2nd Place (+1250 EXP)
+          Add 2nd Place (+<span class="series-exp">1250</span>)
         </button>
         <button onclick="frontline.add3rdPlaceWin()">
-          Add 3rd Place (+1000 EXP)
+          Add 3rd Place (+<span class="series-exp">1000</span>)
         </button>
         <p class="aria-label" aria-labelledby="tbl-frontline">
           Frontline Data Table
@@ -176,11 +186,19 @@
         Show / Hide
       </button>
       <div id="view-rivalWings">
-        <p><b>Series EXP (Victory/Defeat):</b> 1250 / 750</p>
+        <p>
+          <b>Series EXP (Victory/Defeat):</b>
+          <span class="series-exp">1250</span> /
+          <span class="series-exp">750</span>
+        </p>
         <p><b>Match Time:</b> 15 minutes</p>
         <p><b>Queue Time:</b> 7 minutes</p>
-        <button onclick="main.addExp(1250)">Add Victory (+1250 EXP)</button>
-        <button onclick="main.addExp(750)">Add Defeat (+750 EXP)</button>
+        <button onclick="main.addExp(1250)">
+          Add Victory (+<span class="series-exp">1250</span>)
+        </button>
+        <button onclick="main.addExp(750)">
+          Add Defeat (+<span class="series-exp">750</span>)
+        </button>
         <p class="aria-label" aria-labelledby="tbl-rivalwings">
           Rival Wings Data Table
         </p>

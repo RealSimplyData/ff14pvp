@@ -61,13 +61,13 @@ frontline.init = function () {
 		const td4 = document.createElement("td");
 		const td5 = document.createElement("td");
 
+		tr.classList.add("dataset", "default-dataset");
+
 		td1.innerHTML = element[0];
 		td2.innerText = "-";
 		td3.innerText = "-";
 		td4.innerText = "-";
 		td5.innerText = "-";
-
-		tr.classList.add("default-dataset");
 
 		tr.appendChild(td1);
 		tr.appendChild(td2);
@@ -91,13 +91,13 @@ frontline.init = function () {
 		const td4 = document.createElement("td");
 		const td5 = document.createElement("td");
 
+		tr.classList.add("dataset", "custom-dataset")
+
 		td1.innerHTML = "Your Win Rate";
 		td2.innerText = "-";
 		td3.innerText = "-";
 		td4.innerText = "-";
 		td5.innerText = "-";
-
-		tr.classList.add("custom-dataset");
 
 		tr.appendChild(td1);
 		tr.appendChild(td2);

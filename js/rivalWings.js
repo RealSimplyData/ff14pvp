@@ -7,7 +7,7 @@ const rivalWings = {
 		["25%", 0.25, 0.75],
 		["10%", 0.1, 0.9],
 		["5%", 0.05, 0.95],
-		["1%", 0, 1]
+		["0%", 0, 1]
 	],
 	hasInit: false,
 };
@@ -24,6 +24,8 @@ rivalWings.init = function () {
 		const td3 = document.createElement("td");
 		const td4 = document.createElement("td");
 		const td5 = document.createElement("td");
+
+		tr.classList.add("dataset")
 
 		td1.innerText = element[0];
 		td2.innerText = "0";

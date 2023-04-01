@@ -25,6 +25,8 @@ crystallineConflict.init = function () {
 		const td4 = document.createElement("td");
 		const td5 = document.createElement("td");
 
+		tr.classList.add("dataset")
+
 		td1.innerText = element[0];
 		td2.innerText = "0";
 		td3.innerText = "0";

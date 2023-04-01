@@ -126,7 +126,7 @@ button:hover {
   width: 100%;
 }
 
-.place {
+.dataset {
   font-weight: 600;
   font-size: 0.8rem;
 }
@@ -141,4 +141,17 @@ button:hover {
 
 .place.third {
   color: #c06c84;
+}
+
+.series-exp {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #9465c3;
+}
+
+.series-exp::after {
+  content: "EXP";
+  color: #9465c3;
+  font-weight: 600;
+  font-size: 0.45rem;
 }

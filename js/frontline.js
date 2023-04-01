@@ -30,12 +30,12 @@ frontline.add1stPlaceWin = function () {
 
 frontline.add2ndPlaceWin = function () {
 	document.getElementById("frontlineSecondPlace").value = frontline.get2ndPlaceMatches() + 1;
-	main.addExp(1000);
+	main.addExp(1250);
 }
 
 frontline.add3rdPlaceWin = function () {
 	document.getElementById("frontlineThirdPlace").value = frontline.get3rdPlaceMatches() + 1;
-	main.addExp(500);
+	main.addExp(1000);
 }
 
 frontline.init = function () {

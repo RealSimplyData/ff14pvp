@@ -1,0 +1,113 @@
+body {
+  background-color: #18181b;
+  color: #fafafa;
+  font-family: "Roboto", sans-serif;
+}
+
+.input-div {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 0.5rem;
+}
+
+.input-div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #b3b3b3;
+  padding: 0.1rem 0.2rem;
+}
+
+input {
+  background-color: #27272a;
+  border: 1px solid #3f3f46;
+  border-radius: 0.25rem;
+  padding: 0.2rem 0.4rem;
+  color: #fafafa;
+}
+
+hr {
+  border: 1px solid #3f3f46;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+p {
+  margin: 0 0 0.3rem 0;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.data-table th {
+  background-color: #27272a;
+  color: #fafafa;
+  font-weight: 600;
+  padding: 0.5rem;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+
+.data-table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #3f3f46;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #1f1f22;
+}
+
+.data-table tr:nth-child(odd) {
+  background-color: #1d1d20;
+}
+
+.aria-label {
+  display: none;
+}
+
+.small {
+  font-size: 0.8rem;
+  color: #b3b3b3;
+  font-weight: 600;
+}
+
+button {
+  background-color: #27272a;
+  border: 1px solid #3f3f46;
+  border-radius: 0.25rem;
+  padding: 0.2rem 0.4rem;
+  color: #fafafa;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3f3f46;
+}
+
+.with-margin {
+  margin: 0 0 0.5rem 0;
+}
+
+.table-container {
+  overflow-x: auto;
+  width: 100%;
+}

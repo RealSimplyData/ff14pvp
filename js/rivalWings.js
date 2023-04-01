@@ -7,7 +7,7 @@ const rivalWings = {
 		["25%", 0.25, 0.75],
 		["10%", 0.1, 0.9],
 		["5%", 0.05, 0.95],
-		["1%", 0.01, 0.99]
+		["1%", 0, 1]
 	],
 	hasInit: false,
 };
@@ -49,7 +49,7 @@ rivalWings.init = function () {
 }
 
 rivalWings.update = function () {
-	const { xpToRank25 } = main.getExpNeeded();
+	const { xpToTargetRank } = main.getExpNeeded();
 
 	for (const entry of rivalWings.entries) {
 		const [, victoryMultiplier, defeatMultiplier] = entry[0];
@@ -60,8 +60,8 @@ rivalWings.update = function () {
 		const td4 = tr.children[3];
 		const td5 = tr.children[4];
 
-		const victoryMatches = Math.ceil((xpToRank25 * victoryMultiplier) / 1250);
-		const defeatMatches = Math.ceil((xpToRank25 * defeatMultiplier) / 750);
+		const victoryMatches = Math.ceil((xpToTargetRank * victoryMultiplier) / 1250);
+		const defeatMatches = Math.ceil((xpToTargetRank * defeatMultiplier) / 750);
 
 		const totalMatches = victoryMatches + defeatMatches;
 

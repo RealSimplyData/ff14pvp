@@ -60,10 +60,10 @@ crystallineConflict.update = function () {
 		const td4 = tr.children[3];
 		const td5 = tr.children[4];
 
-		const victoryMatches = Math.ceil((xpToTargetRank * victoryMultiplier) / 900);
-		const defeatMatches = Math.ceil((xpToTargetRank * defeatMultiplier) / 700);
+		const victoryMatches = (xpToTargetRank * victoryMultiplier) / 900;
+		const defeatMatches = (xpToTargetRank * defeatMultiplier) / 700;
 
-		const totalMatches = victoryMatches + defeatMatches;
+		const totalMatches = Math.ceil(victoryMatches + defeatMatches);
 
 		const matchTime = Math.ceil(totalMatches * 5);
 		const queueTime = Math.ceil(totalMatches * 3);

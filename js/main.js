@@ -1,7 +1,7 @@
 const main = {
 	showCrystallineConflict: util.getLocalStorage("show/crystallineConflict", "boolean", true),
-	showRivalWings: util.getLocalStorage("show/rivalWings", "boolean", true),
-	showFrontline: util.getLocalStorage("show/frontline", "boolean", true),
+	showRivalWings: util.getLocalStorage("show/rivalWings", "boolean", false),
+	showFrontline: util.getLocalStorage("show/frontline", "boolean", false),
 };
 
 main.getRank = function () {
@@ -104,6 +104,7 @@ main.init = function () {
 
 	this.processUpdate();
 	crystallineConflict.init();
+	frontline.init();
 	rivalWings.init();
 }
 
@@ -142,6 +143,7 @@ main.processUpdate = function () {
 	localStorage.setItem("input/targetRank", targetRank);
 
 	crystallineConflict.update();
+	frontline.processUpdate();
 	rivalWings.update();
 }
 

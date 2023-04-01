@@ -9,6 +9,7 @@
     <script src="/js/data.js"></script>
     <script src="/js/util.js"></script>
     <script src="/js/crystallineConflict.js"></script>
+    <script src="/js/frontline.js"></script>
     <script src="/js/rivalWings.js"></script>
     <script src="/js/main.js" defer></script>
   </head>
@@ -83,6 +84,93 @@
     </div>
     <hr />
     <div>
+      <h2>Frontline</h2>
+      <button onclick="main.toggleVisibility('frontline')" class="with-margin">
+        Show / Hide
+      </button>
+      <div id="view-frontline">
+        <p>
+          <b
+            >Series EXP (<span class="place first">1st</span>/<span
+              class="place second"
+              >2nd</span
+            >/<span class="place third">3rd</span>):</b
+          >
+          1500 / 1250 / 1000
+        </p>
+        <p><b>Match Time:</b> 20 minutes</p>
+        <p><b>Queue Time:</b> 7 minutes</p>
+        <p class="small">
+          Enter your win ratio for the Frontline series. This will be used to
+          calculate the number of matches you need to play to reach your target
+          rank. If nothing is entered, a default set of data will be used.
+        </p>
+        <div class="input-div row">
+          <div>
+            <label for="frontlineFirstPlace"># 1st Place (Overall)</label>
+            <input
+              type="number"
+              id="frontlineFirstPlace"
+              min="0"
+              placeholder="0"
+              value="0"
+            />
+          </div>
+          <div>
+            <label for="frontlineSecondPlace"># 2nd Place (Overall)</label>
+            <input
+              type="number"
+              id="frontlineSecondPlace"
+              min="0"
+              placeholder="0"
+              value="0"
+            />
+          </div>
+          <div>
+            <label for="frontlineThirdPlace"># 3rd Place (Overall)</label>
+            <input
+              type="number"
+              id="frontlineThirdPlace"
+              min="0"
+              placeholder="0"
+              value="0"
+            />
+          </div>
+        </div>
+        <button onclick="frontline.add1stPlaceWin()">
+          Add 1st Place (+1500 EXP)
+        </button>
+        <button onclick="frontline.add2ndPlaceWin()">
+          Add 2nd Place (+1250 EXP)
+        </button>
+        <button onclick="frontline.add3rdPlaceWin()">
+          Add 3rd Place (+1000 EXP)
+        </button>
+        <p class="aria-label" aria-labelledby="tbl-frontline">
+          Frontline Data Table
+        </p>
+        <div class="table-container">
+          <table
+            class="data-table"
+            aria-describedby="tbl-frontline"
+            id="frontlineDataTable"
+          >
+            <thead>
+              <tr>
+                <th>Win Rate (1st/2nd/3rd)</th>
+                <th>Matches (estimate)</th>
+                <th>Match Time (estimate)</th>
+                <th>Queue Time (estimate)</th>
+                <th>Total Time (estimate)</th>
+              </tr>
+            </thead>
+            <tbody id="frontlineData"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div>
       <h2>Rival Wings</h2>
       <button onclick="main.toggleVisibility('rivalWings')" class="with-margin">
         Show / Hide
@@ -110,22 +198,6 @@
             <tbody id="rivalwingsData"></tbody>
           </table>
         </div>
-      </div>
-    </div>
-    <hr />
-    <div>
-      <h2>Frontline</h2>
-      <button onclick="main.toggleVisibility('frontline')" class="with-margin">
-        Show / Hide
-      </button>
-      <div id="view-frontline">
-        <p><b>Series EXP (1st/2nd/3rd):</b> 1500 / 1250 / 1000</p>
-        <p><b>Match Time:</b> 20 minutes</p>
-        <p><b>Queue Time:</b> 7 minutes</p>
-        <button onclick="main.addExp(1500)">Add 1st Place (+1500 EXP)</button>
-        <button onclick="main.addExp(1250)">Add 2nd Place (+1250 EXP)</button>
-        <button onclick="main.addExp(1000)">Add 3rd Place (+1000 EXP)</button>
-        <p>Not supported yet</p>
       </div>
     </div>
   </body>

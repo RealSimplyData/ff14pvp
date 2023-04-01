@@ -49,7 +49,7 @@ crystallineConflict.init = function () {
 }
 
 crystallineConflict.update = function () {
-	const { xpToRank25 } = main.getExpNeeded();
+	const { xpToTargetRank } = main.getExpNeeded();
 
 	for (const entry of crystallineConflict.entries) {
 		const [, victoryMultiplier, defeatMultiplier] = entry[0];
@@ -60,8 +60,8 @@ crystallineConflict.update = function () {
 		const td4 = tr.children[3];
 		const td5 = tr.children[4];
 
-		const victoryMatches = Math.ceil((xpToRank25 * victoryMultiplier) / 900);
-		const defeatMatches = Math.ceil((xpToRank25 * defeatMultiplier) / 700);
+		const victoryMatches = Math.ceil((xpToTargetRank * victoryMultiplier) / 900);
+		const defeatMatches = Math.ceil((xpToTargetRank * defeatMultiplier) / 700);
 
 		const totalMatches = victoryMatches + defeatMatches;
 

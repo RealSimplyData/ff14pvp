@@ -22,14 +22,7 @@
     <div class="input-div">
       <div>
         <label for="rank">Current Series Rank</label>
-        <input
-          type="number"
-          id="rank"
-          min="0"
-          max="25"
-          placeholder="0"
-          value="0"
-        />
+        <input type="number" id="rank" min="1" placeholder="1" value="1" />
       </div>
       <div>
         <label for="exp">Current Series EXP</label>
@@ -40,6 +33,16 @@
           max="10000"
           placeholder="0"
           value="0"
+        />
+      </div>
+      <div>
+        <label for="targetRank">Target Series Rank</label>
+        <input
+          type="number"
+          id="targetRank"
+          min="1"
+          placeholder="25"
+          value="25"
         />
       </div>
       <button onclick="main.reset()" id="resetButton">Reset (0/3)</button>
